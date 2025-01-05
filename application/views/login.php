@@ -32,7 +32,7 @@
                         <div>
                             <img src="assets/img/icons/brands/clothease_logo.png" alt="clothease" height="auto" width="350">
                         </div>
-                        <p class="fs-6 mt-3 text-secondary">This system is developed by A2Z IT HUB PVT. LTD. company on 2024.<br> If
+                        <p class="fs-6 mt-3 text-secondary">This system is developed by A2Z IT HUB PVT. LTD. company on 2025.<br> If
                             you have any query about system/software you can contact us on <br>
                             Call / Whatsapp +91 9011144920 <br>Visit Our Website https://a2zithub.com/
                         </p>
@@ -75,7 +75,7 @@
         <div class="container copy">
             <div class="row ">
                 <div class="col-md-12 d-flex justify-content-center">
-                    <p class="fs-6 text-secondary">© ClothEase
+                    <p class="fs-6 text-secondary">© GasPro
                         <script>
                             document.write(new Date().getFullYear());
                         </script>,
