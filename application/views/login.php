@@ -41,21 +41,30 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="card card-body bg-light w-100  h-100 p-4 border-0 shadow">
                         <?php
-                        if (isset($_SESSION['error'])) {
-                            echo '<div class="alert alert-danger">' . htmlspecialchars($_SESSION['error']) . '</div>';
-                            unset($_SESSION['error']); // Remove error after displaying
+                        if (isset($_GET['message'])) {
+                            echo "<p style='color: green;'>{$_GET['message']}</p>";
                         }
                         ?>
-                        <form action="<?= base_url('LoginController/login') ?>" method="post">
+                        <?php
+                        if (isset($_GET['error'])) {
+                            echo '<div style="color: red;">' . htmlspecialchars($_GET['error']) . '</div>';
+                        }
+                        ?>
+
+                        <form action="<?=base_url()?>login/login_proces" method="post">
                             <div class="mb-3">
-                                <label for="username" class="form-label">Username</label>
-                                <input type="text" name="username" class="form-control" id="username" required>
+                                <label for="loginusername" class="form-label fw-semibold">Username</label>
+                                <input type="text" class="form-control rounded-1 bg-white" name="username" id="loginusername"
+                                    aria-describedby="username">
+                                <div id="username" class="form-text">Your unique username to app</div>
                             </div>
                             <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" name="password" class="form-control" id="password" required>
+                                <label for="loginPassword" class="form-label fw-semibold">Password</label>
+                                <input type="password" name="password" class="form-control rounded-1 bg-white" id="loginPassword">
+                                <div id="password" class="form-text">Your Password</div>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                            <button type="submit" class="btn btn-primary rounded-1 px-4 py-3 text-center fw-semibold w-100">Secure
+                                Login</button>
                         </form>
                     </div>
                 </div>

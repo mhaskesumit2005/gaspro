@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class MasterAdminController extends CI_Controller
+class MasterAdmin extends CI_Controller
 {
     protected function navbar()
     {

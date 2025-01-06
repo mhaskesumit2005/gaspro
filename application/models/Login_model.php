@@ -6,7 +6,7 @@ class Login_model extends CI_Model
 
     public function getUserByUsername($username)
     {
-        return $this->db->where('username', $username)->get($this->table)->row_array();
+        return $this->db->where('username', $username)->get($this->table)->result_array();
     }
 }
 ?>
