@@ -49,13 +49,13 @@
                         if (isset($_GET['error'])) {
                             echo '<div style="color: red;">' . htmlspecialchars($_GET['error']) . '</div>';
                         }
-                        ?>
+                        ?>  
 
                         <form action="<?=base_url()?>login_proces" method="post">
                             <div class="mb-3">
                                 <label for="loginusername" class="form-label fw-semibold">Username</label>
-                                <input type="text" class="form-control rounded-1 bg-white" name="username" id="loginusername"
-                                    aria-describedby="username">
+                                <input type="text" class="form-control rounded-1 bg-white" name="account_contact" id="loginusername"
+                                    aria-describedby="account_contact">
                                 <div id="username" class="form-text">Your unique username to app</div>
                             </div>
                             <div class="mb-3">
