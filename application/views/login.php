@@ -51,7 +51,7 @@
                         }
                         ?>
 
-                        <form action="<?= base_url() ?>login_proces" method="post">
+                        <form action="<?=base_url()?>admin/login_proces" method="post">
                             <div class="mb-3">
                                 <label for="loginusername" class="form-label fw-semibold">Username</label>
                                 <input type="text" class="form-control rounded-1 bg-white" name="username" id="loginusername"
