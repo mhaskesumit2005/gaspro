@@ -7,5 +7,11 @@ class Login extends CI_Controller
     {
         $this->load->view('login');
     }
+    public function login_proces()
+    {
+        // session id 
+        echo "<pre>";
+        print_r($_POST);
+    }
 }
 ?>
