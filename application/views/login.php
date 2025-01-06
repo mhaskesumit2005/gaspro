@@ -40,18 +40,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="card card-body bg-light w-100  h-100 p-4 border-0 shadow">
-                        <?php
-                        if (isset($_GET['message'])) {
-                            echo "<p style='color: green;'>{$_GET['message']}</p>";
-                        }
-                        ?>
-                        <?php
-                        if (isset($_GET['error'])) {
-                            echo '<div style="color: red;">' . htmlspecialchars($_GET['error']) . '</div>';
-                        }
-                        ?>
-
-                        <form action="<?=base_url()?>login/login_proces" method="post">
+                        <form action=" <?=base_url()?>login/login_proces" method="post">
                             <div class="mb-3">
                                 <label for="loginusername" class="form-label fw-semibold">Username</label>
                                 <input type="text" class="form-control rounded-1 bg-white" name="username" id="loginusername"
