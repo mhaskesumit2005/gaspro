@@ -117,6 +117,11 @@
                 <div class="menu-inner-shadow"></div>
 
                 <ul class="menu-inner py-1">
+
+                <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Pages</span>
+                    </li>
+                    
                     <!-- Dashboard -->
                     <li class="menu-item active">
                         <a href="index.html" class="menu-link">
