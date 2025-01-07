@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>GasPro-Dashboard</title>
+    <title>GasPro MasterAdmin Dashboard</title>
 
     <meta name="description" content="" />
 
@@ -33,7 +33,7 @@
     <!-- Core CSS -->
     <link rel="stylesheet" href="<?=base_url()?>assets/master_admin_assets/vendor/css/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="<?=base_url()?>assets/master_admin_assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="<?=base_url()?>assets/master_admin_assets/css/demo.css" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="<?=base_url()?>assets/master_admin_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
@@ -45,7 +45,7 @@
     <!-- Helpers -->
     <script src="<?=base_url()?>assets/master_admin_assets/vendor/js/helpers.js"></script>
 
-    <script src="../assets/js/config.js"></script>
+    <script src="<?=base_url()?>assets/master_admin_assets/js/config.js"></script>
 </head>
 
 <body>
