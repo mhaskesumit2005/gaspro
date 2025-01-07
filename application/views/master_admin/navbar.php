@@ -56,7 +56,7 @@
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
-                    <a href="index.html" class="app-brand-link">
+                    <a href="<?=base_url()?>master_admin" class="app-brand-link">
                         <span class="app-brand-logo demo py-2">
                         <img src="<?=base_url()?>assets/login_assets/images/gaspro_logo.png" width="150" height="auto">
                         </span>

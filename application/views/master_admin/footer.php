@@ -7,7 +7,7 @@
                 document.write(new Date().getFullYear());
             </script>
             , By
-            <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">A2Z IT HUV PVT LTD</a>
+            <a href="#" target="_blank" class="footer-link fw-bolder">A2Z IT HUV PVT LTD</a>
         </div>
         <div>
             <!-- <a
@@ -37,7 +37,7 @@
 
 <div class="buy-now">
     <a
-        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
+        href="#"
         target="_blank"
         class="btn btn-danger btn-buy-now btn-sm">Support</a>
 </div>
