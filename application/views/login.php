@@ -15,85 +15,23 @@
 
 </head>
 
-<body>
-    <div class="login_container vh-100">
-
-        <!-- navbar -->
-        <nav class="navbar shadow header p-0">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="<?=base_url()?>assets/login_assets/images/gas_favicon.png" alt="A2Z IT HUB PVT LTD"
-                        width="auto" height="55">
-                </a>
-            </div>
-        </nav>
-
-        <!-- login section -->
-        <div class="container h-75 py-5 ">
-            <div class="row d-flex align-items-center">
-                <div class="col-sm-6 col-lg-8">
-                    <div class="p-4 content">
-                        <div>
-                            <img src="<?=base_url()?>assets/login_assets/images/gaspro_logo.png" alt="GasPro"
-                                height="auto" width="400">
+<body class="overflow-hidden">
+    <!-- <div class="login_container vh-100"> -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 vh-100 cylinder p-0"> 
+                </div>
+                <div class="col-md-6 vh-100 d-flex align-items-center p-0">
+                    <div class="card card-body vh-100 justify-content-center bg-light border-0 rounded-0">
+                        <div class="text-center">
+                            <img src="<?=base_url()?>assets/login_assets/images/gas_favicon.png" alt="" width="auto" height="120">
                         </div>
-                        <p class="fs-6 mt-3 text-secondary">This system is developed by A2Z IT HUB PVT. LTD. company on
-                            2025.<br> If
-                            you have any query about system/software you can contact us on <br>
-                            Call / Whatsapp +91 9011144920 <br>Visit Our Website https://a2zithub.com/
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="card card-body bg-light  p-4 border-0 shadow">
-                        <form action="" method="post" novalidate>
-                            <div class="py-3">
-                                <label for="loginusername" class="form-label fw-semibold">Username</label>
-                                <input type="text" class="form-control rounded-1 bg-white" name="username"
-                                    id="loginusername" aria-describedby="username" required>
-                                <!-- <div id="username" class="form-text">Your unique username to app</div> -->
-                                <div class="invalid-feedback">
-                                    Please enter your username.
-                                </div>
-                            </div>
-                            <div class="py-3">
-                                <label for="loginPassword" class="form-label fw-semibold">Password</label>
-                                <input type="password" name="password" class="form-control rounded-1 bg-white"
-                                    id="loginPassword" required>
-                                <!-- <div id="password" class="form-text">Your Password</div> -->
-                                <div class="invalid-feedback">
-                                    Please enter your password.
-                                </div>
-                            </div>
-                            <div class="py-3">
-                            <button type="submit"
-                                class="btn btn-primary rounded-1 px-4 py-3 text-center fw-semibold w-100">Secure
-                                Login</button>
-                            </div>
-                        </form>
-
+                        <h3 class="text-capitalize text-center">welcome to GasPro Login</h3>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- footer -->
-        <div class="container copy">
-            <div class="row ">
-                <div class="col-md-12 d-flex justify-content-center">
-                    <p class="fs-6 text-secondary">© GasPro
-                        <script>
-                        document.write(new Date().getFullYear());
-                        </script>,
-                        <a href="https://a2zithub.org/" target="_blank" class=" text-decoration-none fw-semibold">A2Z IT
-                            HUB PVT
-                            LTD</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    <!-- </div> -->
 
     <!-- Bootstrap 5.3v script -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
