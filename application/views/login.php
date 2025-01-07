@@ -45,29 +45,31 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
-                    <div class="card card-body bg-light w-100  h-100 p-4 border-0 shadow">
+                    <div class="card card-body bg-light  p-4 border-0 shadow">
                         <form action="" method="post" novalidate>
-                            <div class="mb-3">
+                            <div class="py-3">
                                 <label for="loginusername" class="form-label fw-semibold">Username</label>
                                 <input type="text" class="form-control rounded-1 bg-white" name="username"
                                     id="loginusername" aria-describedby="username" required>
-                                <div id="username" class="form-text">Your unique username to app</div>
+                                <!-- <div id="username" class="form-text">Your unique username to app</div> -->
                                 <div class="invalid-feedback">
                                     Please enter your username.
                                 </div>
                             </div>
-                            <div class="mb-3">
+                            <div class="py-3">
                                 <label for="loginPassword" class="form-label fw-semibold">Password</label>
                                 <input type="password" name="password" class="form-control rounded-1 bg-white"
                                     id="loginPassword" required>
-                                <div id="password" class="form-text">Your Password</div>
+                                <!-- <div id="password" class="form-text">Your Password</div> -->
                                 <div class="invalid-feedback">
                                     Please enter your password.
                                 </div>
                             </div>
+                            <div class="py-3">
                             <button type="submit"
                                 class="btn btn-primary rounded-1 px-4 py-3 text-center fw-semibold w-100">Secure
                                 Login</button>
+                            </div>
                         </form>
 
                     </div>
