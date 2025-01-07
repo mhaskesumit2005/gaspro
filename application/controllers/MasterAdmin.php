@@ -7,7 +7,7 @@ class MasterAdmin extends CI_Controller
     {
         $this->load->view("master_admin/navbar");
     }
-    
+
     public function index()
     {
         $this->navbar();
@@ -15,9 +15,16 @@ class MasterAdmin extends CI_Controller
         $this->footer();
     }
 
+
+    public function admin_profile()
+    {
+        $this->navbar();
+        $this->load->view("master_admin/admin_profile");
+        $this->footer();
+    }
+    
     protected function footer()
     {
         $this->load->view("master_admin/footer");
     }
 }
-?>
