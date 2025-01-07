@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class MasterAdmin extends CI_Controller
+class Master_admin extends CI_Controller
 {
     protected function navbar()
     {
@@ -11,10 +11,9 @@ class MasterAdmin extends CI_Controller
     public function index()
     {
         $this->navbar();
-        $this->load->view('master_admin/dashboard');
+        $this->load->view('master_admin/index');
         $this->footer();
     }
-
 
     public function admin_profile()
     {
@@ -28,3 +27,4 @@ class MasterAdmin extends CI_Controller
         $this->load->view("master_admin/footer");
     }
 }
+?>
