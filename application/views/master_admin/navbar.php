@@ -55,9 +55,9 @@
             <!-- Menu -->
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-                <div class="app-brand demo justify-content-center py-3">
+                <div class="app-brand demo">
                     <a href="index.html" class="app-brand-link">
-                        <span class="app-brand-logo demo">
+                        <span class="app-brand-logo demo py-2">
                         <img src="<?=base_url()?>assets/login_assets/images/gaspro_logo.png" width="150" height="auto">
                         </span>
                     </a>
@@ -70,9 +70,10 @@
                 <div class="menu-inner-shadow"></div>
 
                 <ul class="menu-inner py-1">
+
                     <!-- Dashboard -->
                     <li class="menu-item active">
-                        <a href="index.html" class="menu-link">
+                        <a href="<?=base_url()?>master_admin" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
                             <div data-i18n="Analytics">Dashboard</div>
                         </a>
@@ -201,15 +202,7 @@
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- Place this tag where you want the button to render. -->
-                            <li class="nav-item lh-1 me-3">
-                                <a
-                                    class="github-button"
-                                    href="https://github.com/themeselection/sneat-html-admin-template-free"
-                                    data-icon="octicon-star"
-                                    data-size="large"
-                                    data-show-count="true"
-                                    aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
-                            </li>
+                           
 
                             <!-- User -->
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -220,7 +213,7 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li>
-                                        <a class="dropdown-item" href="#">
+                                        <a class="dropdown-item" href="<?=base_url()?>master_admin/admin_profile">
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
@@ -228,8 +221,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block">John Doe</span>
-                                                    <small class="text-muted">Admin</small>
+                                                    <span class="fw-semibold d-block">Sumit Mhaske</span>
+                                                    <small class="text-muted">Master Admin</small>
                                                 </div>
                                             </div>
                                         </a>
@@ -238,7 +231,7 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#">
+                                        <a class="dropdown-item" href="<?=base_url()?>master_admin/admin_profile">
                                             <i class="bx bx-user me-2"></i>
                                             <span class="align-middle">My Profile</span>
                                         </a>
@@ -247,15 +240,6 @@
                                         <a class="dropdown-item" href="#">
                                             <i class="bx bx-cog me-2"></i>
                                             <span class="align-middle">Settings</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <span class="d-flex align-items-center align-middle">
-                                                <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                                                <span class="flex-grow-1 align-middle">Billing</span>
-                                                <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                                            </span>
                                         </a>
                                     </li>
                                     <li>
