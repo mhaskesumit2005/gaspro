@@ -39,21 +39,25 @@
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="email" class="form-label">E-mail</label>
-                                <input class="form-control" type="text" id="email" name="email" placeholder="info@example.com" />
+                                <input class="form-control" type="text" id="email" name="email" placeholder="example@gmail.com" />
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="phoneNumber">Phone Number</label>
                                 <div class="input-group input-group-merge">
                                     <span class="input-group-text">IN (+91)</span>
-                                    <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="202 555 0111" />
+                                    <input type="text" id="phoneNumber" name="profile_mobile" class="form-control" placeholder="Phone" />
                                 </div>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address" name="address" placeholder="Address" />
+                                <input type="text" class="form-control" id="address" name="address" placeholder="Your Address" />
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="state" class="form-label">State</label>
+                                <input class="form-control" type="text" id="state" name="state" placeholder="California" />
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="state" class="form-label"></label>
                                 <input class="form-control" type="text" id="state" name="state" placeholder="California" />
                             </div>
                             <div class="mb-3 col-md-6">
