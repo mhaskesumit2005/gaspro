@@ -11,7 +11,7 @@ class Master_admin extends CI_Controller
     public function index()
     {
         $this->navbar();
-        $this->load->view('master_admin/index');
+        $this->load->view('master_admin/dashboard');
         $this->footer();
     }
 
