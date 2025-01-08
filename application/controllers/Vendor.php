@@ -6,19 +6,19 @@ class Vendor extends CI_Controller
 
     protected function navbar()
     {
-        $this->load->view("vendor_admin/navbar");
+        $this->load->view("vendor/navbar");
     }
     public function index()
     {
         $this->navbar();
-        $this->load->view("vendor_admin/dashboard");
+        $this->load->view("vendor/dashboard");
         $this->footer();
     }
 
     protected function footer()
 
     {
-        $this->load->view("vendor_admin/footer");
+        $this->load->view("vendor/footer");
     }
 }
 ?>

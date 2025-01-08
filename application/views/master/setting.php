@@ -7,7 +7,7 @@
                     <a class="nav-link" href="<?= base_url() ?>master/master_profile"><i class="bx bx-user me-1"></i> Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="<?= base_url() ?>master/setting"><i class='bx bx-cog bx-spin'></i> Setting</a>
+                    <a class="nav-link active" href="<?= base_url() ?>master/setting"><i class='bx bxs-lock bx-tada'></i> Security</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="bx bx-link-alt me-1"></i> Connections</a>
@@ -17,58 +17,65 @@
                 <h5 class="card-header">Change Password</h5>
                 <hr class="my-0" />
                 <div class="card-body">
-                    <form id="formAccountSettings" method="POST" onsubmit="return false">
+                    <form id="changePasswordForm" action="<?= base_url() ?>master/change_password" method="post" novalidate>
                         <div class="row">
-                            <!-- <div class="mb-3 col-md-4">
-                                <label for="current_password" class="form-label">Current Password</label>
-                                <input class="form-control" type="text" id="current_password" name="current_password" placeholder="Current Password" autocomplete="off" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                                <label for="new_password" class="form-label">New Password</label>
-                                <input class="form-control" type="text" name="new_password" id="new_password" placeholder="New Password" />
-                            </div> -->
-                            <!-- <div class="mb-3 col-md-4 form-password-toggle">
-                                <label for="confirm_password" class="form-label">Confirm Password</label>
-                                <input class="form-control" type="text" name="confirm_password" id="confirm_password" placeholder="Confirm Password" />
-                            </div> -->
+                            <!-- Current Password -->
                             <div class="mb-3 col-md-4 form-password-toggle">
-                                <div class="input-group input-group-merge">
-                                    <input type="password" id="password" class="form-control" name="password" placeholder="Confirm Password" aria-describedby="password" />
-                                    <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                                <label for="current_password" class="form-label">Current Password</label>
+                                <div class="input-group">
+                                    <input type="password" id="current_password" class="form-control" name="current_password"
+                                        placeholder="Enter Current Password" required />
+                                    <span class="input-group-text cursor-pointer toggle-password">
+                                        <i class="bx bx-hide fs-4"></i>
+                                    </span>
+                                    <div class="invalid-feedback">Please enter your current password.</div>
                                 </div>
                             </div>
 
+                            <!-- New Password -->
+                            <div class="mb-3 col-md-4 form-password-toggle">
+                                <label for="new_password" class="form-label">New Password</label>
+                                <div class="input-group">
+                                    <input type="password" id="new_password" class="form-control" name="new_password"
+                                        placeholder="Enter New Password" minlength="8" required />
+                                    <span class="input-group-text cursor-pointer toggle-password">
+                                        <i class="bx bx-hide fs-4"></i>
+                                    </span>
+                                    <div class="invalid-feedback">Your new password must be at least 8 characters long.</div>
+                                </div>
+                            </div>
+
+                            <!-- Confirm Password -->
+                            <div class="mb-3 col-md-4 form-password-toggle">
+                                <label for="confirm_password" class="form-label">Confirm Password</label>
+                                <div class="input-group">
+                                    <input type="password" id="confirm_password" class="form-control" name="confirm_password"
+                                        placeholder="Confirm Your New Password" required />
+                                    <span class="input-group-text cursor-pointer toggle-password">
+                                        <i class="bx bx-hide fs-4"></i>
+                                    </span>
+                                    <div class="invalid-feedback">Passwords must match.</div>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- Buttons -->
                         <div class="mt-2">
-                            <button type="submit" class="btn btn-primary me-2">Save changes</button>
-                            <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+                            <button class="btn btn-primary" type="submit">Change Password</button>
+                            <button class="btn btn-outline-secondary" type="reset"><i class="bx bx-reset"></i></button>
                         </div>
                     </form>
                 </div>
-                <!-- /Account -->
-            </div>
-            <div class="card">
-                <h5 class="card-header">Delete Account</h5>
-                <div class="card-body">
-                    <div class="mb-3 col-12 mb-0">
-                        <div class="alert alert-warning">
-                            <h6 class="alert-heading fw-bold mb-1">Are you sure you want to delete your account?</h6>
-                            <p class="mb-0">Once you delete your account, there is no going back. Please be certain.</p>
-                        </div>
-                    </div>
-                    <form id="formAccountDeactivation" onsubmit="return false">
-                        <div class="form-check mb-3">
-                            <input
-                                class="form-check-input"
-                                type="checkbox"
-                                name="accountActivation"
-                                id="accountActivation" />
-                            <label class="form-check-label" for="accountActivation">I confirm my account deactivation</label>
-                        </div>
-                        <button type="submit" class="btn btn-danger deactivate-account">Deactivate Account</button>
-                    </form>
+                <div class="container mt-1">
+                    <h6>Password Requirements:</h6>
+                    <ul class="ps-4">
+                        <li>Minimum 8 characters long - the more, the better.</li>
+                        <li>At least one lowercase character.</li>
+                        <li>At least one number, symbol, or whitespace character.</li>
+                    </ul>
                 </div>
             </div>
+
         </div>
     </div>
 </div>

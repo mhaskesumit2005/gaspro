@@ -46,6 +46,7 @@
     <script src="<?=base_url()?>assets/master_admin_assets/vendor/js/helpers.js"></script>
 
     <script src="<?=base_url()?>assets/master_admin_assets/js/config.js"></script>
+    <script src="<?=base_url()?>assets/master_admin_assets/js/validation.js"></script>
 </head>
 
 <body>
