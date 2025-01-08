@@ -211,7 +211,7 @@
                                         <img src="<?=base_url()?>assets/master_admin_assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                                     </div>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-end">
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
                                     <li>
                                         <a class="dropdown-item" href="<?=base_url()?>master_admin/admin_profile">
                                             <div class="d-flex">
