@@ -60,10 +60,11 @@
                     novalidate>
                     <div class="mb-4">
                         <label for="username" class="form-label fw-bold">Username/Phone</label>
-                        <input type="number" class="form-control shadow-sm border-0" id="username" name="username"
-                            placeholder="0123456789" autofocus required />
+                        <input type="text" class="form-control shadow-sm border-0" id="username" name="username"
+                            placeholder="0123456789" maxlength="10" pattern="\d{10}"
+                            title="Your Number" required autofocus />
                         <div class="invalid-feedback">
-                            Please enter a valid phone number.
+                            Please enter a valid 10-digit phone number.
                         </div>
                     </div>
 
@@ -71,7 +72,7 @@
                         <label class="form-label fw-bold" for="password">Password</label>
                         <div class="input-group input-group-merge">
                             <input type="password" id="password" class="form-control border-0 shadow-sm" name="password"
-                                placeholder="Your password" aria-describedby="password" required />
+                                placeholder="Your password" aria-describedby="password" required title="Please Enter Password for Login"/>
                             <span class="input-group-text cursor-pointer border-0 shadow-sm"><i
                                     class="bx bx-hide fs-4"></i></span>
                             <div class="invalid-feedback">
