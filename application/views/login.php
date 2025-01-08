@@ -22,11 +22,36 @@
                 <div class="col-md-6 vh-100 cylinder p-0"> 
                 </div>
                 <div class="col-md-6 vh-100 d-flex align-items-center p-0">
-                    <div class="card card-body vh-100 justify-content-center bg-light border-0 rounded-0">
+                    <div class="card card-body vh-100 justify-content-center bg-light border-0 rounded-0 p-5">
                         <div class="text-center">
                             <img src="<?=base_url()?>assets/login_assets/images/gas_favicon.png" alt="" width="auto" height="120">
                         </div>
                         <h3 class="text-capitalize text-center">welcome to GasPro Login</h3>
+                        <form>
+                        <div class="py-3">
+                                <label for="loginusername" class="form-label fw-semibold">Username</label>
+                                <input type="text" class="form-control rounded-1 bg-white" name="username"
+                                    id="loginusername" aria-describedby="username" required>
+                                <!-- <div id="username" class="form-text">Your unique username to app</div> -->
+                                <div class="invalid-feedback">
+                                    Please enter your username.
+                                </div>
+                            </div>
+                            <div class="py-3">
+                                <label for="loginPassword" class="form-label fw-semibold">Password</label>
+                                <input type="password" name="password" class="form-control rounded-1 bg-white"
+                                    id="loginPassword" required>
+                                <!-- <div id="password" class="form-text">Your Password</div> -->
+                                <div class="invalid-feedback">
+                                    Please enter your password.
+                                </div>
+                            </div>
+                            <div class="py-3 submit_btn">
+                            <button type="submit"
+                                class="btn btn-primary rounded-1 px-4 py-3 text-center fw-semibold float-end">Secure
+                                Login</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

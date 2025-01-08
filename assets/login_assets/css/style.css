@@ -11,5 +11,8 @@
     {
         display:none !important;
     }
-
+    .submit_btn button
+    {
+        width: 100% !important;
+    }
 }

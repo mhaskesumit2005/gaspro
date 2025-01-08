@@ -58,7 +58,7 @@
                 <div class="app-brand demo">
                     <a href="<?=base_url()?>master_admin" class="app-brand-link">
                         <span class="app-brand-logo demo py-2">
-                        <img src="<?=base_url()?>assets/login_assets/images/gaspro_logo.png" width="150" height="auto">
+                        <img src="<?=base_url()?>assets/login_assets/images/gaspro_dash.png" width="180" height="auto">
                         </span>
                     </a>
 
