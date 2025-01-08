@@ -1,30 +1,30 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Master_admin extends CI_Controller
+class Master extends CI_Controller
 {
     protected function navbar()
     {
-        $this->load->view("master_admin/navbar");
+        $this->load->view("master/navbar");
     }
 
     public function index()
     {
         $this->navbar();
-        $this->load->view('master_admin/dashboard');
+        $this->load->view('master/dashboard');
         $this->footer();
     }
 
-    public function admin_profile()
+    public function master_profile()
     {
         $this->navbar();
-        $this->load->view("master_admin/admin_profile");
+        $this->load->view("master/master_profile");
         $this->footer();
     }
     
     protected function footer()
     {
-        $this->load->view("master_admin/footer");
+        $this->load->view("master/footer");
     }
 }
 ?>
