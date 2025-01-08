@@ -22,6 +22,10 @@ class Master extends CI_Controller
         $this->footer();
     }
     
+    public function setting()
+    {
+        $this->navbar();$this->load->view("master/setting");$this->footer();
+    }
     protected function footer()
     {
         $this->load->view("master/footer");

@@ -4,10 +4,10 @@
         <div class="col-md-12">
             <ul class="nav nav-pills flex-column flex-md-row mb-3">
                 <li class="nav-item">
-                    <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i> Profile</a>
+                    <a class="nav-link active" href="<?=base_url()?>master/master_profile"><i class="bx bx-user me-1"></i> Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bx bx-bell me-1"></i> Notifications</a>
+                    <a class="nav-link" href="<?=base_url()?>master/setting"><i class='bx bx-cog bx-spin' ></i> Setting</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="bx bx-link-alt me-1"></i> Connections</a>
