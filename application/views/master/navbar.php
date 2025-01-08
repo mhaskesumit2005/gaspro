@@ -56,7 +56,7 @@
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
-                    <a href="<?=base_url()?>master_admin" class="app-brand-link">
+                    <a href="<?=base_url()?>master" class="app-brand-link">
                         <span class="app-brand-logo demo py-2">
                         <img src="<?=base_url()?>assets/login_assets/images/gaspro_logo.png" width="150" height="auto">
                         </span>
@@ -73,7 +73,7 @@
 
                     <!-- Dashboard -->
                     <li class="menu-item active">
-                        <a href="<?=base_url()?>master_admin" class="menu-link">
+                        <a href="<?=base_url()?>master" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
                             <div data-i18n="Analytics">Dashboard</div>
                         </a>
@@ -213,7 +213,7 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end p-2">
                                     <li>
-                                        <a class="dropdown-item" href="<?=base_url()?>master_admin/admin_profile">
+                                        <a class="dropdown-item" href="<?=base_url()?>master/master_profile">
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
@@ -231,7 +231,7 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="<?=base_url()?>master_admin/admin_profile">
+                                        <a class="dropdown-item" href="<?=base_url()?>master/master_profile">
                                             <i class="bx bx-user me-2"></i>
                                             <span class="align-middle">My Profile</span>
                                         </a>

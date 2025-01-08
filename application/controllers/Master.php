@@ -15,10 +15,10 @@ class Master extends CI_Controller
         $this->footer();
     }
 
-    public function admin_profile()
+    public function master_profile()
     {
         $this->navbar();
-        $this->load->view("master/admin_profile");
+        $this->load->view("master/master_profile");
         $this->footer();
     }
     
