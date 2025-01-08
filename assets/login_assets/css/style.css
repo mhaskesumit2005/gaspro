@@ -1,50 +1,15 @@
-.header {
-    background-color: #5E7493 !important;
-}
 
-body {
-    background-color: #F5F5F9 !important;
+.cylinder{
+   object-fit: cover;
+   background-image: url('../images/cylinder.jpg');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
 }
-
-.login_container .card-body button {
-    background-color: #5E7493 !important;
-    outline: 0;
-    border: 0;
-}
-.login_container .card .card-body
-{
-    max-height: fit-content !important;
-} 
-.login_container .card-body input {
-    height: 50px !important;
-    box-shadow: none !important;
-}
-.login_container .card-body .form-check-input{
-    height: 5px !important;
-    box-shadow: none !important;
-}
-.login_container .card-body label {
-    font-size: 15px !important;
-}
-.login_container .copy p {
-    bottom: 0;
-    position: absolute;
-}
-.login_container .copy a{
-    color: #366279 !important;
-}
-
 @media(max-width:667px) {
-    .content {
-        display: none !important;
-    }
-
-    .login_container {
-        height: 100% !important;
-    }
-
-    .login_container .card-body {
-        max-height: fit-content !important;
+    .cylinder
+    {
+        display:none !important;
     }
 
 }
