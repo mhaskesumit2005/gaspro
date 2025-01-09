@@ -49,7 +49,7 @@
     <div class="row">
         <div class="col-md-7 vh-100 cylinder p-0">
         </div>
-        <div class="col-md-5 d-flex align-items-center p-0">
+        <div class="col-sm-12 col-lg-5 d-flex align-items-center p-0">
             <div class="card card-body justify-content-center bg-light border-0 rounded-0 p-5 login vh-100">
                 <div class="text-center">
                     <img src="<?=base_url()?>assets/login_assets/images/gas_favicon.png" alt="favicon" width="auto"
