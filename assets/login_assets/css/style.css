@@ -56,3 +56,8 @@
 		position: absolute;
 	}
 }
+@media(max-width: 997px) {
+	.cylinder {
+		display: none !important;
+	}
+}
