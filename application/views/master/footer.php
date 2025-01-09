@@ -9,7 +9,7 @@
                 document.write(new Date().getFullYear());
             </script>
             , By
-            <a href="#" target="_blank" class="footer-link fw-bolder">A2Z IT HUV PVT LTD</a>
+            <a href="#" target="_blank" class="footer-link fw-bolder">A2Z IT HUB PVT LTD</a>
         </div>
         <div>
             <!-- <a
