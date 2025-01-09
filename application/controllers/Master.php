@@ -35,7 +35,7 @@ class Master extends CI_Controller
     // Driver controllers
     public function driver()
     {
-        $data['driver'] = $this->Master_model->select("driver");
+        $data['driver'] = $this->Master_model->active_records("driver", array('status' => 'active'));
         $this->navbar();
         $this->load->view('master/driver', $data);
         $this->footer();
@@ -47,10 +47,26 @@ class Master extends CI_Controller
         // print_r($_POST);
     }
 
+    // public function delete_driver($driver_id)
+    // {
+    //     $cond = ["driver_id" => $driver_id];
+    //     $this->Master_model->delete("driver", $cond);
+    //     redirect(base_url() . "master/driver");
+    // }
+
     public function delete_driver($driver_id)
     {
-        $cond = ["driver_id" => $driver_id];
-        $this->Master_model->delete("driver", $cond);
-        redirect(base_url() . "master/driver");
+        $this->Master_model->update_status($driver_id, 'Deactive');
+
+
+        $this->session->set_flashdata("success");
+
+        if (isset($_SERVER['HTTP_REFERER'])) {
+            header(header: "Location:" . $_SERVER['HTTP_REFERER']);
+            exit;
+        } else {
+            echo "<script>history.back();</script>";
+            exit;
+        }
     }
 }

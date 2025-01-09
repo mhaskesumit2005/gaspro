@@ -15,6 +15,7 @@
             </div>
             <div class="modal-body">
                 <form method="POST" action="<?= base_url() ?>master/save_driver" id="driverForm" novalidate>
+                    <input type="hidden" name="status" value="Active">
                     <div class="row g-3">
                         <div class="col-md-4">
                             <label for="driver_name" class="form-label">Name</label>
@@ -61,7 +62,6 @@
                             <th>Vehical</th>
                             <th>Vehical No.</th>
                             <th>Status</th>
-                            <th>Profile</th>
                             <th>Password</th>
                             <th>Salary</th>
                             <th>Actions</th>
@@ -73,17 +73,16 @@
                         foreach ($driver as $key => $row) {
                             $phoneNumber = $row['driver_phone']; // Set the dynamic phone number
                             $message = "Dear " . $row['driver_name'] . ",
-Complete your profile for GasPro.
+Complete your profile for *GasPro*.
 User ID : " . $row['driver_phone'] . "
 Password : " . $row['password'] . "
 
 Thanks & Regards,
-GasPro";
+*GasPro Team*";
                             $encodedMessage = urlencode($message);
                             $whatsappURL = "https://wa.me/+91$phoneNumber?text=$encodedMessage"; // Generate WhatsApp link
                         ?>
                             <tr>
-                                <td><?= $key + 1 ?></td>
                                 <td><?= $row['driver_name'] ?></td>
                                 <td><?= $row['driver_phone'] ?></td>
                                 <td><?= $row['driver_address'] ?></td>
@@ -94,7 +93,7 @@ GasPro";
                                 <td>
                                     <a href="<?= $whatsappURL ?>" target="_blank" class="btn btn-sm" style="background-color:rgb(23, 223, 97); color:white;"><i class='bx bxl-whatsapp'></i></a>
                                     <a href="" class="btn btn-primary btn-sm"><i class='bx bx-edit'></i></a>
-                                    <a href="<?=base_url()?>master/delete_driver/<?=$row['driver_id']?>" class="btn btn-danger btn-sm"><i class='bx bxs-trash bx-tada'></i></a>
+                                    <a href="<?=base_url('')?>master/delete_driver/<?=$row['driver_id']?>" class="btn btn-danger btn-sm"><i class='bx bxs-trash bx-tada'></i></a>
                                 </td>
                             </tr>
                         <?php } ?>
