@@ -68,6 +68,28 @@
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+<script>
+    // JavaScript for Bootstrap validation
+    (function() {
+        'use strict';
+
+        // Fetch all the forms we want to apply custom Bootstrap validation to
+        const forms = document.querySelectorAll('#driverForm');
+
+        // Loop over them and prevent submission if invalid
+        Array.from(forms).forEach((form) => {
+            form.addEventListener('submit', (event) => {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated'); // Apply Bootstrap validation styles
+            }, false);
+        });
+    })();
+</script>
 </body>
 
 </html>

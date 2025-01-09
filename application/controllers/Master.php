@@ -21,10 +21,12 @@ class Master extends CI_Controller
         $this->load->view("master/profile");
         $this->footer();
     }
-    
+
     public function setting()
     {
-        $this->navbar();$this->load->view("master/setting");$this->footer();
+        $this->navbar();
+        $this->load->view("master/setting");
+        $this->footer();
     }
     protected function footer()
     {
@@ -33,16 +35,22 @@ class Master extends CI_Controller
     // Driver controllers
     public function driver()
     {
-        $data['driver']=$this->Master_model->select("driver");
+        $data['driver'] = $this->Master_model->select("driver");
         $this->navbar();
-        $this->load->view('master/driver',$data);
+        $this->load->view('master/driver', $data);
         $this->footer();
     }
     public function save_driver()
     {
-        $this->Master_model->insert("driver",$_POST);
-        redirect(base_url()."master/driver");
+        $this->Master_model->insert("driver", $_POST);
+        redirect(base_url() . "master/driver");
         // print_r($_POST);
     }
+
+    public function delete_driver($driver_id)
+    {
+        $cond = ["driver_id" => $driver_id];
+        $this->Master_model->delete("driver", $cond);
+        redirect(base_url() . "master/driver");
+    }
 }
-?>
