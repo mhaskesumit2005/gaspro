@@ -4,7 +4,7 @@
     class="light-style layout-menu-fixed"
     dir="ltr"
     data-theme="theme-default"
-    data-assets-path="<?=base_url()?>assets"
+    data-assets-path="<?= base_url() ?>assets"
     data-template="vertical-menu-template-free">
 
 <head>
@@ -18,7 +18,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="<?=base_url()?>assets/master_admin_assets/img/favicon/gas_favicon.png" />
+    <link rel="icon" type="image/x-icon" href="<?= base_url() ?>assets/master_admin_assets/img/favicon/gas_favicon.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,25 +28,25 @@
         rel="stylesheet" />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/master_admin_assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/master_admin_assets/vendor/css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="<?=base_url()?>assets/master_admin_assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="<?=base_url()?>assets/master_admin_assets/css/demo.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/css/demo.css" />
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/master_admin_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
-    <link rel="stylesheet" href="<?=base_url()?>assets/master_admin_assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/vendor/libs/apex-charts/apex-charts.css" />
 
     <!-- Page CSS -->
-
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/css/drag_and_drop.css">
     <!-- Helpers -->
-    <script src="<?=base_url()?>assets/master_admin_assets/vendor/js/helpers.js"></script>
+    <script src="<?= base_url() ?>assets/master_admin_assets/vendor/js/helpers.js"></script>
 
-    <script src="<?=base_url()?>assets/master_admin_assets/js/config.js"></script>
-    <script src="<?=base_url()?>assets/master_admin_assets/js/validation.js"></script>
+    <script src="<?= base_url() ?>assets/master_admin_assets/js/config.js"></script>
+
 </head>
 
 <body>
@@ -57,9 +57,9 @@
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
-                    <a href="<?=base_url()?>master" class="app-brand-link">
+                    <a href="<?= base_url() ?>master" class="app-brand-link">
                         <span class="app-brand-logo demo py-2">
-                        <img src="<?=base_url()?>assets/login_assets/images/gaspro_dash.png" width="180" height="auto">
+                            <img src="<?= base_url() ?>assets/login_assets/images/gaspro_dash.png" width="180" height="auto">
                         </span>
                     </a>
 
@@ -74,8 +74,8 @@
 
                     <!-- Dashboard -->
                     <li class="menu-item active">
-                        <a href="<?=base_url()?>master" class="menu-link">
-                        <i class='bx bxs-dashboard'></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="<?= base_url() ?>master" class="menu-link">
+                            <i class='bx bxs-dashboard'></i>&nbsp;&nbsp;&nbsp;&nbsp;
                             <div data-i18n="Analytics">Dashboard</div>
                         </a>
                     </li>
@@ -165,8 +165,8 @@
                             </li>
                         </ul>
                     </li>
-                   
-                    
+
+
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Pages</span>
                     </li>
@@ -203,22 +203,22 @@
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- Place this tag where you want the button to render. -->
-                           
+
 
                             <!-- User -->
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
-                                        <img src="<?=base_url()?>assets/master_admin_assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                        <img src="<?= base_url() ?>assets/master_admin_assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end p-2">
                                     <li>
-                                        <a class="dropdown-item" href="<?=base_url()?>master/profile">
+                                        <a class="dropdown-item" href="<?= base_url() ?>master/profile">
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="<?=base_url()?>assets/master_admin_assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                                        <img src="<?= base_url() ?>assets/master_admin_assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
@@ -232,13 +232,13 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="<?=base_url()?>master/profile">
+                                        <a class="dropdown-item" href="<?= base_url() ?>master/profile">
                                             <i class="bx bx-user me-2"></i>
                                             <span class="align-middle">My Profile</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="<?=base_url()?>master/setting">
+                                        <a class="dropdown-item" href="<?= base_url() ?>master/setting">
                                             <i class="bx bx-cog me-2"></i>
                                             <span class="align-middle">Settings</span>
                                         </a>
@@ -263,3 +263,6 @@
 
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
+                    <!-- Content -->
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
