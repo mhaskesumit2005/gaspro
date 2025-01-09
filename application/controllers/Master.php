@@ -33,9 +33,16 @@ class Master extends CI_Controller
     // Driver controllers
     public function driver()
     {
+        $data['driver']=$this->Master_model->select("driver");
         $this->navbar();
-        $this->load->view('master/driver');
+        $this->load->view('master/driver',$data);
         $this->footer();
+    }
+    public function save_driver()
+    {
+        $this->Master_model->insert("driver",$_POST);
+        redirect(base_url()."master/driver");
+        // print_r($_POST);
     }
 }
 ?>
