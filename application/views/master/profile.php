@@ -34,6 +34,10 @@
                     <form id="formAccountSettings" method="POST" onsubmit="return false">
                         <div class="row">
                             <div class="mb-3 col-md-6">
+                                <label for="business_name" class="form-label">Business Name</label>
+                                <input class="form-control" type="text" id="business_name" name="business_name" placeholder="Business Name"  />
+                            </div>
+                            <div class="mb-3 col-md-6">
                                 <label for="fullname" class="form-label">Full Name</label>
                                 <input class="form-control" type="text" id="fullname" name="fullname" placeholder="Your Full Name"  />
                             </div>
@@ -48,9 +52,9 @@
                                     <input type="text" id="phoneNumber" name="profile_mobile" class="form-control" placeholder="Phone" />
                                 </div>
                             </div>
-                            <div class="mb-3 col-md-6">
+                            <div class="mb-3 col-md-12">
                                 <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address" name="address" placeholder="Your Address" />
+                                 <textarea name="address" id="address" class="form-control" placeholder="Your Address"></textarea>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="state" class="form-label">State</label>
