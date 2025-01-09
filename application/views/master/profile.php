@@ -4,7 +4,7 @@
         <div class="col-md-12">
             <ul class="nav nav-pills flex-column flex-md-row mb-3">
                 <li class="nav-item">
-                    <a class="nav-link active" href="<?=base_url()?>master/master_profile"><i class="bx bx-user me-1"></i> Profile</a>
+                    <a class="nav-link active" href="<?=base_url()?>master/profile"><i class="bx bx-user me-1"></i> Profile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?=base_url()?>master/setting"><i class='bx bxs-lock bx-tada' ></i> Security</a>

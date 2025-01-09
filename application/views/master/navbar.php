@@ -75,7 +75,7 @@
                     <!-- Dashboard -->
                     <li class="menu-item active">
                         <a href="<?=base_url()?>master" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                        <i class='bx bxs-dashboard'></i>&nbsp;&nbsp;&nbsp;&nbsp;
                             <div data-i18n="Analytics">Dashboard</div>
                         </a>
                     </li>
@@ -214,7 +214,7 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end p-2">
                                     <li>
-                                        <a class="dropdown-item" href="<?=base_url()?>master/master_profile">
+                                        <a class="dropdown-item" href="<?=base_url()?>master/profile">
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
@@ -232,7 +232,7 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="<?=base_url()?>master/master_profile">
+                                        <a class="dropdown-item" href="<?=base_url()?>master/profile">
                                             <i class="bx bx-user me-2"></i>
                                             <span class="align-middle">My Profile</span>
                                         </a>
