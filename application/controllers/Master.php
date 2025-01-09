@@ -31,10 +31,10 @@ class Master extends CI_Controller
         $this->load->view("master/footer");
     }
     // Driver controllers
-    public function add_driver()
+    public function driver()
     {
         $this->navbar();
-        $this->load->view('master/add_driver');
+        $this->load->view('master/driver');
         $this->footer();
     }
 }

@@ -17,7 +17,7 @@
             <div class="card-body">
                 <div class="d-flex align-items-start align-items-sm-center gap-4">
                     <img src="<?= base_url() ?>assets/master_admin_assets/img/avatars/1.png" alt="user-avatar" class="d-block rounded" height="100" width="100" id="uploadedAvatar" />
-                    <form action=" <?= base_url() ?>master/save_profile" method="post" enctype="multipart/form-data">
+                    <form action="<?= base_url() ?>master/save_profile" method="post" enctype="multipart/form-data">
                         <div class="button-wrapper">
                             <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
                                 <span class="d-none d-sm-block">Upload New Photo &nbsp; <i class='bx bx-upload bx-burst bx-flip-vertical'></i></span>
@@ -54,14 +54,7 @@
                         <label for="address" class="form-label">Address</label>
                         <textarea name="address" id="address" class="form-control" placeholder="Your Address"></textarea>
                     </div>
-                    <div class="mb-3 col-md-6">
-                        <label for="business_favicon" class="form-label">Business Favicon</label>
-                        <div id="faviconDropZone" class="drop-zone">
-                            <span>Drag and drop favicon here, or click to upload</span>
-                            <input class="form-control" type="file" id="business_favicon" name="business_favicon" />
-                        </div>
-                    </div>
-                    <div class="mb-3 col-md-6">
+                    <div class="mb-3 col-md-12">
                         <label for="business_logo" class="form-label">Business Logo</label>
                         <div id="logoDropZone" class="drop-zone">
                             <span>Drag and drop logo here, or click to upload</span>
