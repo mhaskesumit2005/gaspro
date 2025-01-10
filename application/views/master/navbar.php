@@ -95,7 +95,13 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="menu-item">
+                        <a href="<?=base_url()?>master/vendor" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-layout"></i>
+                            <div data-i18n="Transport">Vendor</div>
+                        </a>
 
+                    </li>
                 </ul>
             </aside>
             <!-- / Menu -->
