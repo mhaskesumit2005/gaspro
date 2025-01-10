@@ -56,7 +56,7 @@
                         height="120">
                 </div>
                 <h3 class="text-capitalize text-center text-dark">welcome to GasPro Login</h3>
-                <form id="formAuthentication" class="mb-3 needs-validation" action="index.html" method="POST"
+                <form id="formAuthentication" class="mb-3 needs-validation" action="<?=base_url()?>login/login_proces" method="POST"
                     novalidate>
                     <div class="mb-4">
                         <label for="username" class="form-label fw-bold">Username/Phone</label>

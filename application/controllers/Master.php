@@ -32,6 +32,7 @@ class Master extends CI_Controller
     {
         $this->load->view("master/footer");
     }
+
     // Driver controllers
     public function driver()
     {
@@ -40,19 +41,12 @@ class Master extends CI_Controller
         $this->load->view('master/driver', $data);
         $this->footer();
     }
+    
     public function save_driver()
     {
         $this->Master_model->insert("driver", $_POST);
         redirect(base_url() . "master/driver");
-        // print_r($_POST);
     }
-
-    // public function delete_driver($driver_id)
-    // {
-    //     $cond = ["driver_id" => $driver_id];
-    //     $this->Master_model->delete("driver", $cond);
-    //     redirect(base_url() . "master/driver");
-    // }
 
     public function delete_driver($driver_id)
     {

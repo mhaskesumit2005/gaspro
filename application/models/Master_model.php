@@ -36,7 +36,7 @@ class Master_model extends CI_Model
     public function active_records($tname, $cond)
     {
         $status = 'Active';
-        $this->db->where('status', 'active', $status, $cond);
+        $this->db->where('status', $status, $cond);
         return $this->db->where($cond)->get($tname)->result_array();
     }
 }

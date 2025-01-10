@@ -5,19 +5,19 @@ class Transport extends CI_Controller
 {
     protected function navbar()
     {
-        $this->load->view("transport_admin/navbar");
+        $this->load->view("transport/navbar");
     }
 
     public function index()
     {
         $this->navbar();
-        $this->load->view('transport_admin/dashboard');
+        $this->load->view('transport/dashboard');
         $this->footer();
     }
 
     protected function footer()
     {
-        $this->load->view("transport_admin/footer");
+        $this->load->view("transport/footer");
     }
 }
 ?>
