@@ -16,7 +16,6 @@ class Vendor extends CI_Controller
     }
 
     protected function footer()
-
     {
         $this->load->view("vendor/footer");
     }

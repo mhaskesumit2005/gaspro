@@ -46,7 +46,6 @@ class Master extends CI_Controller
         redirect(base_url() . "master/driver");
         // print_r($_POST);
     }
-
     // public function delete_driver($driver_id)
     // {
     //     $cond = ["driver_id" => $driver_id];
@@ -68,5 +67,18 @@ class Master extends CI_Controller
             echo "<script>history.back();</script>";
             exit;
         }
+    }
+    // vendor
+    public function vendor()
+    {
+        $this->navbar();
+        $this->load->view("master/vendor");
+        $this->footer();
+    }
+    public function save_vendor()
+    {
+        $this->Master_model->insert("vendor",$_POST);
+        // redirect(base_url()."master/vendor");
+        print_r($_POST);
     }
 }
