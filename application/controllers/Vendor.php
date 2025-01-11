@@ -3,7 +3,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Vendor extends CI_Controller
 {
-
+    public function __construct()
+    {
+        parent::__construct();
+        if (!isset($_SESSION['role'])) {
+            redirect(base_url() . "login");
+            exit;
+        }
+        if ($_SESSION['role'] != 'Vendor') {
+            redirect(base_url() . "login");
+        }
+    }
     protected function navbar()
     {
         $this->load->view("vendor/navbar");
@@ -20,4 +30,3 @@ class Vendor extends CI_Controller
         $this->load->view("vendor/footer");
     }
 }
-?>

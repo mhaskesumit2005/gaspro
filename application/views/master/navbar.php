@@ -57,7 +57,7 @@
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
-                    <a href="<?= base_url() ?>master" class="app-brand-link">
+                    <a href="<?= base_url() ?>master/index" class="app-brand-link">
                         <span class="app-brand-logo demo py-2">
                             <img src="<?= base_url() ?>assets/login_assets/images/gaspro_dash.png" width="180" height="auto">
                         </span>
@@ -74,7 +74,7 @@
 
                     <!-- Dashboard -->
                     <li class="menu-item active">
-                        <a href="<?= base_url() ?>master" class="menu-link">
+                        <a href="<?= base_url() ?>master/index" class="menu-link">
                             <i class='bx bxs-dashboard'></i>&nbsp;&nbsp;&nbsp;&nbsp;
                             <div data-i18n="Analytics">Dashboard</div>
                         </a>
@@ -83,7 +83,7 @@
                     <!-- Transport -->
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-layout"></i>
+                        <i class="menu-icon tf-icons bx bx-car"></i>
                             <div data-i18n="Transport">Transport</div>
                         </a>
 
@@ -179,7 +179,7 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="auth-login-basic.html">
+                                        <a class="dropdown-item" href="<?=base_url()?>login/logout">
                                             <i class="bx bx-power-off me-2"></i>
                                             <span class="align-middle">Log Out</span>
                                         </a>

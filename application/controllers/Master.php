@@ -3,6 +3,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Master extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        if (!isset($_SESSION['role'])) {
+            redirect(base_url() . "login");
+            exit;
+        }
+        if ($_SESSION['role'] != 'Master') {
+            redirect(base_url() . "login");
+            exit;
+        }
+    }
     protected function navbar()
     {
         $this->load->view("master/navbar");
@@ -41,21 +53,12 @@ class Master extends CI_Controller
         $this->load->view('master/driver', $data);
         $this->footer();
     }
-    
+
     public function save_driver()
     {
         $this->Master_model->insert("driver", $_POST);
         redirect(base_url() . "master/driver");
     }
-<<<<<<< HEAD
-=======
-    // public function delete_driver($driver_id)
-    // {
-    //     $cond = ["driver_id" => $driver_id];
-    //     $this->Master_model->delete("driver", $cond);
-    //     redirect(base_url() . "master/driver");
-    // }
->>>>>>> 98d9fff75de350ded9dedff4648076adc363f6f5
 
     public function delete_driver($driver_id)
     {
@@ -81,7 +84,7 @@ class Master extends CI_Controller
     }
     public function save_vendor()
     {
-        $this->Master_model->insert("vendor",$_POST);
+        $this->Master_model->insert("vendor", $_POST);
         // redirect(base_url()."master/vendor");
         print_r($_POST);
     }

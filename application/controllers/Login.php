@@ -13,8 +13,8 @@ class Login extends CI_Controller
         $username = $this->input->post('username');
         $password = $this->input->post('password');
 
-        if (empty($username) || empty($password )) {
-            echo "Username and password are required";
+        if (empty($username) || empty($password)) {
+            echo "Username and password are required.";
             return;
         }
 
@@ -25,18 +25,17 @@ class Login extends CI_Controller
         if ($account) {
             $_SESSION['account_id'] = $account['account_id'];
             $_SESSION['username'] = $account['username'];
-            $_SESSION['password'] = $account['password'];
             $_SESSION['role'] = $account['role'];
 
             switch ($account['role']) {
                 case 'Master':
-                    redirect('master');
+                    redirect('master/index');
                     break;
                 case 'Vendor':
-                    redirect('vendor');
+                    redirect('vendor/index');
                     break;
                 case 'Transport':
-                    redirect('transport');
+                    redirect('transport/index');
                     break;
                 default:
                     echo "Role not defined.";
@@ -46,5 +45,11 @@ class Login extends CI_Controller
             echo "Invalid username or password.";
             redirect('login');
         }
+    }
+
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        redirect('login');
     }
 }
