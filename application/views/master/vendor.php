@@ -18,9 +18,9 @@
                 <form method="POST" action="<?= base_url() ?>master/save_vendor" id="driverForm" novalidate>
                     <div class="row g-3">
                         <div class="col-md-4">
-                            <label for="vendor_business" class="form-label">Name</label>
+                            <label for="vendor_business" class="form-label">Business Name</label>
                             <input class="form-control" type="text" id="vendor_business" name="vendor_business"
-                                placeholder="Enter Name" required />
+                                placeholder="Enter Business Name" required />
                             <div class="invalid-feedback">
                                 Please enter the driver's name.
                             </div>
@@ -55,23 +55,44 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card">
-            <h5 class="card-header text-uppercase">Driver's List</h5>
+            <h5 class="card-header text-uppercase">Vendor's List</h5>
             <div class="table-responsive text-nowrap">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Driver Name</th>
-                            <th>Mobile</th>
-                            <th>Vehical</th>
-                            <th>Vehical No.</th>
+                            <th>SR.No</th>
+                            <th>Business Name</th>
+                            <th>Vendor Name</th>
+                            <th>Vendor Photo</th>
                             <th>Status</th>
                             <th>Password</th>
-                            <th>Salary</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
-
+                        <?php
+                        foreach ($vendor as $key => $row)
+                        {
+                            ?>
+                            <tr>
+                                <td><?=$key+1?></td>
+                                <td><?=$row['vendor_business']?></td>
+                                <td><?=$row['vendor_name']?></td>
+                                <td><?=$row['vendor_photo']?></td>
+                                <td><?=$row['vendor_number']?></td>
+                                <td><?=$row['vendor_password']?></td>
+                                <td>
+                                <a href="" target="_blank" class="btn btn-sm"
+                                    style="background-color:rgb(23, 223, 97); color:white;"><i
+                                        class='bx bxl-whatsapp'></i></a>
+                                <a href="" class="btn btn-primary btn-sm"><i class='bx bx-edit'></i></a>
+                                <a href="<?=base_url('')?>master/delete_vendor/<?=$row['vendor_id']?>"
+                                    class="btn btn-danger btn-sm"><i class='bx bxs-trash bx-tada'></i></a>
+                            </td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
                     </tbody>
                 </table>
             </div>
