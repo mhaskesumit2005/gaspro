@@ -3,6 +3,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Master extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        if (!isset($_SESSION['role'])) {
+            redirect(base_url() . "login");
+            exit;
+        }
+        if ($_SESSION['role'] != 'Master') {
+            redirect(base_url() . "login");
+            exit;
+        }
+    }
     protected function navbar()
     {
         $this->load->view("master/navbar");
@@ -41,7 +53,7 @@ class Master extends CI_Controller
         $this->load->view('master/driver', $data);
         $this->footer();
     }
-    
+
     public function save_driver()
     {
         $this->Master_model->insert("driver", $_POST);
