@@ -20,16 +20,14 @@
 .login input {
 	height: 50px !important;
 }
-.login button {
-	background-color: #5e7594 !important;
-}
+
 .login input
 {
-    border-bottom: 3px solid #5e7594 !important;
+    border-bottom: 3px solid white !important;
 }
 .login .input-group-text
 {
-    border-bottom: 3px solid #5e7594 !important;
+    border-bottom: 3px solid white !important;
     border-bottom-right-radius: 5px !important;
     border-top-right-radius: 5px !important;
 
