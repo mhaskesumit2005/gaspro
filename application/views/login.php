@@ -11,7 +11,6 @@
     <!-- External Css -->
     <link rel="stylesheet" href="<?=base_url()?>assets/login_assets/css/style.css">
     <!-- Favicon -->
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="<?=base_url()?>assets/login_assets/images/favicon/gas_favicon.png" />
 
     <!-- Fonts -->
@@ -91,10 +90,7 @@
                             <script>
                             document.write(new Date().getFullYear());
                             </script>,
-                            <a href="https://a2zithub.org/" target="_blank" class=" text-decoration-none fw-bold">A2Z IT
-                                HUB PVT
-                                LTD</a>
-                        </p>
+                            <a href="https://a2zithub.org/" target="_blank" class=" text-decoration-none fw-bold">A2Z IT HUB PVT LTD</a></p>
                     </div>
                 </div>
             </div>
@@ -104,19 +100,19 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-    <script src="<?=base_url()?>assets/master_admin_assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="<?=base_url()?>assets/master_admin_assets/vendor/libs/popper/popper.js"></script>
-    <script src="<?=base_url()?>assets/master_admin_assets/vendor/js/bootstrap.js"></script>
-    <script src="<?=base_url()?>assets/master_admin_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="<?=base_url()?>assets/login_assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="<?=base_url()?>assets/login_assets/vendor/libs/popper/popper.js"></script>
+    <script src="<?=base_url()?>assets/login_assets/vendor/js/bootstrap.js"></script>
+    <script src="<?=base_url()?>assets/login_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-    <script src="<?=base_url()?>assets/master_admin_assets/vendor/js/menu.js"></script>
+    <script src="<?=base_url()?>assets/login_assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="<?=base_url()?>assets/master_admin_assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="<?=base_url()?>assets/login_assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
     <!-- Page JS -->
-    <script src="<?=base_url()?>assets/master_admin_assets/js/dashboards-analytics.js"></script>
+    <script src="<?=base_url()?>assets/login_assets/js/dashboards-analytics.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
