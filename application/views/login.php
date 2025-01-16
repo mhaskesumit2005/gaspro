@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- External Css -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/login_assets/css/style.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/login_assets/css/login_page.css">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="<?=base_url()?>assets/login_assets/images/favicon/gas_favicon.png" />
 
@@ -55,13 +55,13 @@
                         height="120">
                 </div>
                 <h3 class="text-capitalize text-center text-dark">welcome to GasPro Login</h3>
-                <form id="formAuthentication" class="mb-3 needs-validation" action="<?=base_url()?>login/login_proces" method="POST"
-                    novalidate>
+                <form id="formAuthentication" class="mb-3 needs-validation" action="<?=base_url()?>login/login_proces"
+                    method="POST" novalidate>
                     <div class="mb-4">
                         <label for="username" class="form-label fw-bold">Username/Phone</label>
                         <input type="text" class="form-control shadow-sm border-0" id="username" name="username"
-                            placeholder="0123456789" maxlength="10" pattern="\d{10}"
-                            title="Your Number" required autofocus />
+                            placeholder="0123456789" maxlength="10" pattern="\d{10}" title="Your Number" required
+                            autofocus />
                         <div class="invalid-feedback">
                             Please enter a valid 10-digit phone number.
                         </div>
@@ -71,7 +71,8 @@
                         <label class="form-label fw-bold" for="password">Password</label>
                         <div class="input-group input-group-merge">
                             <input type="password" id="password" class="form-control border-0 shadow-sm" name="password"
-                                placeholder="Your password" aria-describedby="password" required title="Please Enter Password for Login"/>
+                                placeholder="Your password" aria-describedby="password" required
+                                title="Please Enter Password for Login" />
                             <span class="input-group-text cursor-pointer border-0 shadow-sm"><i
                                     class="bx bx-hide fs-4"></i></span>
                             <div class="invalid-feedback">
@@ -80,8 +81,7 @@
                         </div>
                     </div>
                     <div>
-                        <button type="submit" class="btn text-white d-grid py-2 fw-semibold border-0 w-100 py-3">Secure
-                            Login</button>
+                        <button class="btn text-white w-100 py-3 fw-semibold">Secure Login</button>
                     </div>
                 </form>
                 <div class="row footer_link">
@@ -112,7 +112,8 @@
     <script src="<?=base_url()?>assets/login_assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
     <!-- Page JS -->
-    <script src="<?=base_url()?>assets/login_assets/js/dashboards-analytics.js"></script>
+    <script src="<?=base_url()?>assets/master_admin_assets/js/dashboards-analytics.js"></script>
+    <script src="<?=base_url()?>assets/master_admin_assets/js/main.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
