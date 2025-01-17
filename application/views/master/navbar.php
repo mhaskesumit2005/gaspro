@@ -28,24 +28,24 @@
         rel="stylesheet" />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/vendor/css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/css/demo.css" />
-    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_assets/css/demo.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_assets/css/style.css">
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
-    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_assets/vendor/libs/apex-charts/apex-charts.css" />
 
     <!-- Page CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>assets/master_admin_assets/css/drag_and_drop.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/master_assets/css/drag_and_drop.css">
     <!-- Helpers -->
-    <script src="<?= base_url() ?>assets/master_admin_assets/vendor/js/helpers.js"></script>
+    <script src="<?= base_url() ?>assets/master_assets/vendor/js/helpers.js"></script>
 
-    <script src="<?= base_url() ?>assets/master_admin_assets/js/config.js"></script>
+    <script src="<?= base_url() ?>assets/master_assets/js/config.js"></script>
 
 </head>
 

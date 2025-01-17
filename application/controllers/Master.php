@@ -40,10 +40,7 @@ class Master extends CI_Controller
         $this->load->view("master/setting");
         $this->footer();
     }
-    protected function footer()
-    {
-        $this->load->view("master/footer");
-    }
+
 
     // Driver controllers
     public function driver()
@@ -85,14 +82,26 @@ class Master extends CI_Controller
     public function vendor()
     {
         $this->navbar();
-        $data['vendor']=$this->Master_model->select("vendor");
-        $this->load->view("master/vendor",$data);
+        $data['vendor'] = $this->Master_model->select("vendor");
+        $this->load->view("master/vendor", $data);
         $this->footer();
     }
     public function save_vendor()
     {
-        $this->Master_model->insert("vendor",$_POST);
-        redirect(base_url()."master/vendor");
+        $this->Master_model->insert("vendor", $_POST);
+        redirect(base_url() . "master/vendor");
         // print_r($_POST);
+    }
+
+    public function cylinder()
+    {
+        $this->navbar();
+        $this->load->view("master/cylinder");
+        $this->footer();
+    }
+
+    protected function footer()
+    {
+        $this->load->view("master/footer");
     }
 }

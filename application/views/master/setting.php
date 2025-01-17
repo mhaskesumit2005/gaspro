@@ -8,7 +8,7 @@
                 <a class="nav-link active" href="<?= base_url() ?>master/setting"><i class='bx bxs-lock bx-tada me-2'></i> Security</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bx bx-link-alt me-1"></i> Connections</a>
+                <a class="nav-link" href="<?= base_url() ?>master/cylinder"><i class='bx bxs-cylinder me-2'></i>Cylinder</a>
             </li>
         </ul>
         <div class="card mb-4">

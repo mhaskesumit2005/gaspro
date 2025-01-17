@@ -8,7 +8,7 @@
                 <a class="nav-link" href="<?= base_url() ?>master/setting"><i class='bx bxs-lock bx-tada me-2'></i> Security</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bx bx-link-alt me-1"></i> Connections</a>
+                <a class="nav-link" href="<?= base_url() ?>master/cylinder"><i class='bx bxs-cylinder me-2'></i>Cylinder</a>
             </li>
         </ul>
         <div class="card mb-4">
@@ -16,7 +16,7 @@
             <!-- Account -->
             <div class="card-body">
                 <div class="d-flex align-items-start align-items-sm-center gap-4">
-                    <img src="<?= base_url() ?>assets/master_admin_assets/img/avatars/1.png" alt="user-avatar" class="d-block rounded" height="100" width="100" id="uploadedAvatar" />
+                    <img src="<?= base_url() ?>assets/master_assets/img/avatars/1.png" alt="user-avatar" class="d-block rounded" height="100" width="100" id="uploadedAvatar" />
                     <form action="<?= base_url() ?>master/save_profile" method="post" enctype="multipart/form-data">
                         <div class="button-wrapper">
                             <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
@@ -58,7 +58,7 @@
                         <label for="business_logo" class="form-label">Business Logo</label>
                         <div id="logoDropZone" class="drop-zone">
                             <span>Drag and drop logo here, or click to upload</span>
-                            <input class="form-control" type="file" id="business_logo" name="business_logo" />
+                            <input class="form-control" type="file" id="business_logo" name="business_logo" style="display: none;" />
                         </div>
                     </div>
                 </div>
