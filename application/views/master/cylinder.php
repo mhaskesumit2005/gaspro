@@ -78,7 +78,7 @@
                             <td><?=$key+1?></td>
                             <td><?=$row['gas_name']?></td>
                             <td>
-                                <div class="color_div border border-secondary d-flex justify-content-center" title="<?=$row['color_code']?>"
+                                <div class="color_div border border-secondary rounded-circle" title="<?=$row['color_code']?>"
                                     style="background-color:<?=$row['color_code']?>"></div>
                             </td>
                             <td><?=$row['create_date']?></td>
