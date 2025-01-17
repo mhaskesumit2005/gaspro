@@ -18,7 +18,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="<?= base_url() ?>assets/master_admin_assets/img/favicon/gas_favicon.png" />
+    <link rel="icon" type="image/x-icon" href="<?= base_url() ?>assets/master_assets/img/favicon/gas_favicon.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -83,20 +83,20 @@
                     <!-- Transport -->
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
-                        <i class="menu-icon tf-icons bx bx-car"></i>
+                            <i class="menu-icon tf-icons bx bx-car"></i>
                             <div data-i18n="Transport">Transport</div>
                         </a>
 
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="<?=base_url()?>master/driver" class="menu-link">
+                                <a href="<?= base_url() ?>master/driver" class="menu-link">
                                     <div data-i18n="Drivers">Driver</div>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="menu-item">
-                        <a href="<?=base_url()?>master/vendor" class="menu-link">
+                        <a href="<?= base_url() ?>master/vendor" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-layout"></i>
                             <div data-i18n="Transport">Vendor</div>
                         </a>
@@ -141,7 +141,7 @@
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
-                                        <img src="<?= base_url() ?>assets/master_admin_assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                        <img src="<?= base_url() ?>assets/master_assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end p-2">
@@ -150,7 +150,7 @@
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="<?= base_url() ?>assets/master_admin_assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                                        <img src="<?= base_url() ?>assets/master_assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
@@ -176,10 +176,16 @@
                                         </a>
                                     </li>
                                     <li>
+                                        <a class="dropdown-item" href="<?= base_url() ?>master/cylinder">
+                                            <i class='bx bxs-cylinder me-2'></i>
+                                            <span class="align-middle">Cylinder</span>
+                                        </a>
+                                    </li>
+                                    <li>
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="<?=base_url()?>login/logout">
+                                        <a class="dropdown-item" href="<?= base_url() ?>login/logout">
                                             <i class="bx bx-power-off me-2"></i>
                                             <span class="align-middle">Log Out</span>
                                         </a>
