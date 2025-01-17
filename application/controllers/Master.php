@@ -90,16 +90,20 @@ class Master extends CI_Controller
     {
         $this->Master_model->insert("vendor", $_POST);
         redirect(base_url() . "master/vendor");
-        // print_r($_POST);
     }
-
+    //cylinder
     public function cylinder()
     {
         $this->navbar();
-        $this->load->view("master/cylinder");
+        $data['gas']=$this->Master_model->select("gas");
+        $this->load->view("master/cylinder",$data);
         $this->footer();
     }
-
+    public function save_gas()
+    {
+        $this->Master_model->insert("gas", $_POST);
+        redirect(base_url()."master/cylinder");
+    }
     protected function footer()
     {
         $this->load->view("master/footer");

@@ -3,3 +3,9 @@
 	-webkit-appearance: none;
 	margin: 0;
 }
+.color_div
+{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
