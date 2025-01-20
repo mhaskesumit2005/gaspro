@@ -21,27 +21,25 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">New Driver</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">New Gas</h1>
                 <button type="button" class="btn-close rounded-circle bg-dark" data-bs-dismiss="modal"
                     aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form method="POST" action="<?= base_url()?>master/save_gas">
                     <div class="row g-3">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <label for="gas_name" class="form-label">Gas Name</label>
                             <input class="form-control" type="text" id="gas_name" name="gas_name"
                                 placeholder="Enter Name" required />
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <label for="color_code" class="form-label">Color Code</label>
                             <input class="form-control h-50" type="color" name="color_code" id="color_code"
                                 placeholder="Enter Color" required />
-                        </div>
-                        <div class="col-md-4">
-                            <label for="create_date" class="form-label">Date</label>
-                            <input class="form-control" type="date" name="create_date" id="create_date"
-                                placeholder="Enter Date" required />
+                            
+                            <!-- Date -->
+                            <input type="hidden" id="create_date" name="create_date">
                         </div>
                     </div>
             </div>
@@ -53,6 +51,10 @@
 
     </div>
 </div>
+<!-- Auto Date script -->
+<script>
+document.getElementById('create_date').value = new Date().toISOString().split('T')[0]
+</script>
 <!-- gas list -->
 <div class="row mt-3">
     <div class="col-md-12">
@@ -86,7 +88,7 @@
                                 <a href="<?=base_url()?>master/edit_gas/<?=$row['gas_id']?>"
                                     class="btn btn-primary btn-sm"><i class='bx bx-edit'></i></a>
                                 <a onClick="return confirm('Are You Sure?');"
-                                    href="<?=base_url()?>master/delete/<?=$row['gas_id']?>"
+                                    href="<?=base_url()?>master/delete_gas/<?=$row['gas_id']?>"
                                     class="btn btn-danger btn-sm"><i class='bx bxs-trash bx-tada'></i></a>
                             </td>
                         </tr>

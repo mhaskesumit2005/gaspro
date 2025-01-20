@@ -104,6 +104,12 @@ class Master extends CI_Controller
         $this->Master_model->insert("gas", $_POST);
         redirect(base_url()."master/cylinder");
     }
+    public function delete_gas($id)
+    {
+        $cond=['gas_id'=>$id];
+        $this->Master_model->delete("gas", $cond);
+        redirect(base_url()."master/cylinder");
+    }
     protected function footer()
     {
         $this->load->view("master/footer");
