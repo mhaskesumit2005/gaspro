@@ -16,7 +16,7 @@ class Transport extends CI_Controller
             exit;
         }
     }
-    
+
     protected function navbar()
     {
         $this->load->view("transport/navbar");
@@ -29,6 +29,19 @@ class Transport extends CI_Controller
         $this->footer();
     }
 
+    public function profile()
+    {
+        $this->navbar();
+        $this->load->view("transport/profile");
+        $this->footer();
+    }
+
+    public function setting()
+    {
+        $this->navbar();
+        $this->load->view("transport/setting");
+        $this->footer();
+    }
     protected function footer()
     {
         $this->load->view("transport/footer");
