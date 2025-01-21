@@ -15,7 +15,8 @@
             <h5 class="card-header">Change Password</h5>
             <hr class="my-0" />
             <div class="card-body">
-                <form id="changePasswordForm" action="<?= base_url() ?>master/change_password" method="post" novalidate>
+                <form id="changePasswordForm" action="<?= base_url() ?>master/update_password" method="post" novalidate>
+                    <input type="hidden" id="password_id" name="current_id" value="<?= $_SESSION['account_id']; ?>" />
                     <div class="row">
                         <!-- Current Password -->
                         <div class="mb-3 col-md-4 form-password-toggle">

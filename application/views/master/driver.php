@@ -98,7 +98,6 @@ Thanks & Regards,
                                 <a href="<?= $whatsappURL ?>" target="_blank" class="btn btn-sm"
                                     style="background-color:rgb(23, 223, 97); color:white;"><i
                                         class='bx bxl-whatsapp'></i></a>
-                                <a href="" class="btn btn-primary btn-sm"><i class='bx bx-edit'></i></a>
                                 <a href="<?=base_url('')?>master/delete_driver/<?=$row['driver_id']?>"
                                     class="btn btn-danger btn-sm"><i class='bx bxs-trash bx-tada'></i></a>
                             </td>

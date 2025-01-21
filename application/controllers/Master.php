@@ -6,15 +6,69 @@ class Master extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+
+        // Ensure session is started
         if (!isset($_SESSION['role'])) {
             redirect(base_url() . "login");
             exit;
         }
-        if ($_SESSION['role'] != 'Master') {
+
+        // Restrict access to Master role only
+        if ($_SESSION['role'] !== 'Master') {
             redirect(base_url() . "login");
             exit;
         }
     }
+
+    public function update_password()
+    {
+        // Validate required fields
+        if (
+            $this->input->post('current_id') && $this->input->post('current_password') &&
+            $this->input->post('new_password') && $this->input->post('confirm_password')
+        ) {
+
+            $current_id = $this->input->post('current_id');
+            $current_password = $this->input->post('current_password');
+            $new_password = $this->input->post('new_password');
+            $confirm_password = $this->input->post('confirm_password');
+
+            // Fetch admin data
+            $admin_data = $this->Login_model->get_admin_by_id($current_id);
+
+            if ($admin_data) {
+                // Verify current password
+                if (password_verify($current_password, $admin_data['password'])) {
+                    if ($new_password === $confirm_password) {
+                        $hashed_password = password_hash($new_password, PASSWORD_DEFAULT);
+                        $update_data = ['password' => $hashed_password];
+
+                        if ($this->Login_model->update_admin_password($current_id, $update_data)) {
+                            $this->session->set_flashdata('success', 'Password updated successfully');
+                            redirect(base_url() . "login");
+                        } else {
+                            $this->session->set_flashdata('error', 'Failed to update password.');
+                            redirect(base_url() . "master/setting");
+                        }
+                    } else {
+                        $this->session->set_flashdata('error', 'New password and confirm password do not match.');
+                        redirect(base_url() . "master/setting");
+                    }
+                } else {
+                    $this->session->set_flashdata('error', 'Current password is incorrect.');
+                    redirect(base_url() . "master/setting");
+                }
+            } else {
+                $this->session->set_flashdata('error', 'Admin not found.');
+                redirect(base_url() . "master/setting");
+            }
+        } else {
+            $this->session->set_flashdata('error', 'All fields are required.');
+            redirect(base_url() . "master/setting");
+        }
+    }
+
+
     protected function navbar()
     {
         $this->load->view("master/navbar");
@@ -95,20 +149,20 @@ class Master extends CI_Controller
     public function cylinder()
     {
         $this->navbar();
-        $data['gas']=$this->Master_model->select("gas");
-        $this->load->view("master/cylinder",$data);
+        $data['gas'] = $this->Master_model->select("gas");
+        $this->load->view("master/cylinder", $data);
         $this->footer();
     }
     public function save_gas()
     {
         $this->Master_model->insert("gas", $_POST);
-        redirect(base_url()."master/cylinder");
+        redirect(base_url() . "master/cylinder");
     }
     public function delete_gas($id)
     {
-        $cond=['gas_id'=>$id];
+        $cond = ['gas_id' => $id];
         $this->Master_model->delete("gas", $cond);
-        redirect(base_url()."master/cylinder");
+        redirect(base_url() . "master/cylinder");
     }
     protected function footer()
     {

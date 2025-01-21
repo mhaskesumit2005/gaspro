@@ -176,12 +176,6 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="<?= base_url() ?>master/cylinder">
-                                            <i class='bx bxs-cylinder me-2'></i>
-                                            <span class="align-middle">Cylinder</span>
-                                        </a>
-                                    </li>
-                                    <li>
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>

@@ -9,9 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- External Css -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/login_assets/css/login_page.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/login_assets/css/login_page.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="<?=base_url()?>assets/login_assets/images/favicon/gas_favicon.png" />
+    <link rel="icon" type="image/x-icon" href="<?= base_url() ?>assets/login_assets/images/favicon/gas_favicon.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,27 +21,27 @@
         rel="stylesheet" />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/login_assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/login_assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/login_assets/vendor/css/core.css"
+    <link rel="stylesheet" href="<?= base_url() ?>assets/login_assets/vendor/css/core.css"
         class="template-customizer-core-css" />
-    <link rel="stylesheet" href="<?=base_url()?>assets/login_assets/vendor/css/theme-default.css"
+    <link rel="stylesheet" href="<?= base_url() ?>assets/login_assets/vendor/css/theme-default.css"
         class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="<?=base_url()?>assets/login_assets/css/demo.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/login_assets/css/demo.css" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet"
-        href="<?=base_url()?>assets/login_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+        href="<?= base_url() ?>assets/login_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
-    <link rel="stylesheet" href="<?=base_url()?>assets/login_assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/login_assets/vendor/libs/apex-charts/apex-charts.css" />
 
     <!-- Page CSS -->
 
     <!-- Helpers -->
-    <script src="<?=base_url()?>assets/login_assets/vendor/js/helpers.js"></script>
+    <script src="<?= base_url() ?>assets/login_assets/vendor/js/helpers.js"></script>
 
-    <script src="<?=base_url()?>assets/login_assets/js/config.js"></script>
+    <script src="<?= base_url() ?>assets/login_assets/js/config.js"></script>
 </head>
 
 <body class="overflow-hidden">
@@ -51,11 +51,11 @@
         <div class="col-sm-12 col-lg-5 d-flex align-items-center p-0">
             <div class="card card-body justify-content-center bg-light border-0 rounded-0 p-5 login vh-100">
                 <div class="text-center">
-                    <img src="<?=base_url()?>assets/login_assets/images/gas_favicon.png" alt="favicon" width="auto"
+                    <img src="<?= base_url() ?>assets/login_assets/images/gas_favicon.png" alt="favicon" width="auto"
                         height="120">
                 </div>
                 <h3 class="text-capitalize text-center text-dark">welcome to GasPro Login</h3>
-                <form id="formAuthentication" class="mb-3 needs-validation" action="<?=base_url()?>login/login_proces"
+                <form id="formAuthentication" class="mb-3 needs-validation" action="<?= base_url() ?>login/login_proces"
                     method="POST" novalidate>
                     <div class="mb-4">
                         <label for="username" class="form-label fw-bold">Username/Phone</label>
@@ -83,14 +83,19 @@
                     <div>
                         <button class="btn text-white w-100 py-3 fw-semibold">Secure Login</button>
                     </div>
+                    <!-- Display error message if login failed -->
+                    <?php if ($this->session->userdata('error')): ?>
+                        <p style="color: red;"><?= $this->session->userdata('error'); ?></p>
+                    <?php endif; ?>
                 </form>
                 <div class="row footer_link">
                     <div class="col-md-12 d-flex justify-content-center">
                         <p class="fs-6 text-secondary">© GasPro
                             <script>
-                            document.write(new Date().getFullYear());
+                                document.write(new Date().getFullYear());
                             </script>,
-                            <a href="https://a2zithub.org/" target="_blank" class=" text-decoration-none fw-bold">A2Z IT HUB PVT LTD</a></p>
+                            <a href="https://a2zithub.org/" target="_blank" class=" text-decoration-none fw-bold">A2Z IT HUB PVT LTD</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -100,25 +105,25 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-    <script src="<?=base_url()?>assets/login_assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="<?=base_url()?>assets/login_assets/vendor/libs/popper/popper.js"></script>
-    <script src="<?=base_url()?>assets/login_assets/vendor/js/bootstrap.js"></script>
-    <script src="<?=base_url()?>assets/login_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="<?= base_url() ?>assets/login_assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="<?= base_url() ?>assets/login_assets/vendor/libs/popper/popper.js"></script>
+    <script src="<?= base_url() ?>assets/login_assets/vendor/js/bootstrap.js"></script>
+    <script src="<?= base_url() ?>assets/login_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-    <script src="<?=base_url()?>assets/login_assets/vendor/js/menu.js"></script>
+    <script src="<?= base_url() ?>assets/login_assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="<?=base_url()?>assets/login_assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="<?= base_url() ?>assets/login_assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
     <!-- Page JS -->
-    <script src="<?=base_url()?>assets/login_assets/js/dashboards-analytics.js"></script>
-    <script src="<?=base_url()?>assets/login_assets/js/main.js"></script>
+    <script src="<?= base_url() ?>assets/login_assets/js/dashboards-analytics.js"></script>
+    <script src="<?= base_url() ?>assets/login_assets/js/main.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- External js -->
-    <script src="<?=base_url()?>assets/login_assets/js/login.js"></script>
+    <script src="<?= base_url() ?>assets/login_assets/js/login.js"></script>
 </body>
 
 </html>
