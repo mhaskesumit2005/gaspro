@@ -25,6 +25,20 @@ class Vendor extends CI_Controller
         $this->footer();
     }
 
+    public function profile()
+    {
+        $this->navbar();
+        $this->load->view("vendor/profile");
+        $this->footer();
+    }
+
+    public function setting()
+    {
+        $this->navbar();
+        $this->load->view("vendor/setting");
+        $this->footer();
+    }
+    
     protected function footer()
     {
         $this->load->view("vendor/footer");

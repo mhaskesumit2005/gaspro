@@ -31,9 +31,32 @@ class Transport extends CI_Controller
 
     public function profile()
     {
+        $data['driver'] = $this->Transport_model->select("driver");
         $this->navbar();
-        $this->load->view("transport/profile");
+        $this->load->view("transport/profile", $data);
         $this->footer();
+    }
+
+    public function save_profile()
+    {
+        if ($_FILES['driver_photo']['name'] != '') {
+            $filename = time() . $_FILES['driver_photo']['name'];
+            move_uploaded_file($_FILES['driver_photo']['tmp_name'], "uploads/" . $filename);
+            $_POST['driver_photo'] = $filename;
+        }
+        if ($_FILES['license_photo']['name'] != '') {
+            $filename = time() . $_FILES['license_photo']['name'];
+            move_uploaded_file($_FILES['license_photo']['tmp_name'], "uploads/" . $filename);
+            $_POST['license_photo'] = $filename;
+        }
+        if ($_FILES['aadhaar_photo']['name'] != '') {
+            $filename = time() . $_FILES['aadhaar_photo']['name'];
+            move_uploaded_file($_FILES['aadhaar_photo']['tmp_name'], "uploads/" . $filename);
+            $_POST['aadhaar_photo'] = $filename;
+        }
+        $this->Transport_model->update("driver", ["driver_id" => 1], $_POST);
+
+        redirect(base_url() . "transport/profil e");
     }
 
     public function setting()
